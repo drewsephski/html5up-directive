@@ -138,7 +138,8 @@
 			// Vendor fixes.
 				$this
 					.css('-ms-overflow-style', '-ms-autohiding-scrollbar')
-					.css('-webkit-overflow-scrolling', 'touch');
+					.css('-webkit-overflow-scrolling', 'touch')
+					.css('scroll-behavior', 'smooth'); // Add smooth scrolling
 
 			// Hide on click.
 				if (config.hideOnClick) {
@@ -184,8 +185,7 @@
 					$this.touchPosY = event.originalEvent.touches[0].pageY;
 
 				})
-
-				$this.on('touchmove', function(event) {
+				.on('touchmove', function(event) {
 
 					if ($this.touchPosX === null
 					||	$this.touchPosY === null)
