@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1.5;
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Font Awesome 5 Free', 'Source Sans Pro', sans-serif;
 	font-weight: 800;
 	align-items: center;
 	text-align: center;
